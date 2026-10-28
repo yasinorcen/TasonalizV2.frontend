@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light dark" />
+    <script>
+      try {
+        document.querySelector('meta[name="color-scheme"]').content =
+          localStorage.getItem('color-scheme') ?? 'light dark';
+      } catch (e) {}
+    </script>
+    <title>Tasonaliz — BIST Şirket, KAP Finansal Tablo ve Emtia Simülasyonu</title>
+    <meta
+      name="description"
+      content="Borsa İstanbul şirketleri, KAP finansal tabloları, sade finansal analizler ve değerli metal fiyatlarını sunan öğrenci bilgilendirme ve simülasyon projesi."
+    />
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
